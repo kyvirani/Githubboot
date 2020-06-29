@@ -29,4 +29,4 @@ jobs:
         name: Install Surge
         run: npm Instal -g surge
         name: Run Surge
-        run: surge ./ Githubboot.surge.sh ..token${{secrets.SURGE_TOKEN}}
+        run: surge ./ Githubboot.surge.sh --token${{secrets.SURGE_TOKEN}}
