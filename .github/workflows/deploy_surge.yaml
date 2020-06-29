@@ -29,4 +29,4 @@ jobs:
     - name: install surge
       run: sudo npm install --globally surge
     - name: Run Surge
-      run: ./ Githubboot.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: Run ./ Githubboot.surge.sh --token ${{secrets.SURGE_TOKEN}}
