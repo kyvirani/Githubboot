@@ -22,11 +22,11 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
-    - name: Install NodeJ5
+    - name: install NodeJ5
       uses: actions/setup-node@v2-beta
       with:
         node-version: 12            
-    - name: Install surge
-      run: npm Install -g surge
-    - name: Run surge
+    - name: install surge
+      run: npm install -g surge
+    - name: Run Surge
       run: surge ./ Githubboot.surge.sh --token ${{secrets.SURGE_TOKEN}}
