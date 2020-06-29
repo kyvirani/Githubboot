@@ -27,6 +27,6 @@ jobs:
       with:
         node-version: 12            
     - name: Install surge
-      run: npm Install -g surge
+      run: npm Install --global surge
     - name: Run surge
       run: surge ./ Githubboot.surge.sh --token ${{secrets.SURGE_TOKEN}}
