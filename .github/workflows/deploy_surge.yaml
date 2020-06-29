@@ -25,8 +25,8 @@ jobs:
     - name: Instal NodeJ5
       uses: actions/setup-node@v2-beta
       with:
-        node-version: 12
-        name: Install Surge
-        run: npm Instal -g surge
-        name: Run Surge
-        run: surge ./ Githubboot.surge.sh --token${{secrets.SURGE_TOKEN}}
+        node-version: 12            
+    - name: Install Surge
+      run: npm Instal -g surge
+    - name: Run Surge
+      run: surge ./ Githubboot.surge.sh --token${{secrets.SURGE_TOKEN}}
